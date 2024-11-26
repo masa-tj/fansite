@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ファンサイトトップ</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+        <link rel="icon" href="image/icon/favion.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <meta property="og:title" content="技術書典の本で作ったファンサイト" />
+        <meta property="og:site_name" content="ファンサイト" />
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:description" content="技術書典の本をみながらファンサイトを作ったよ" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://example.com/images/logo.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head> 
+    <body>
+        <div class="container">
+            <div class="section is-large" data-aos="fade-right" data-aos-duration="2000" background-image: url('https://images.unsplash.com/photo-1501013344374-3cbf63baf107?q=80&w=1340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                <h1 class="title">XXさんのファンサイト！</h1>
+                <p class="subtitle">応援ページを頑張って作るぞー！</p>
+                <button id="btnSupport" class="button is-primary">応援する</button>
+            </div>
+
+            <div class="content m-5">
+                <h2 class="has-text-centered">ニュース</h2>
+                <p>推しメンのニュース情報を書きます</p>
+                <table class="table is-fullwidth">
+                    <tbody>
+                        <tr>
+                            <td>20XX年X月X日</td>
+                            <td>XXドームでライブ</td>
+                        </tr>
+                        <tr>
+                            <td>20yy年y月y日</td>
+                            <td>TV yyチャンネルの「yyyyy」に出演</td>
+                        </tr>
+                        <tr>
+                            <td>20zz年z月z日</td>
+                            <td>雑誌「zzzzz」の表紙＆インタビューに掲載</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <div class="colums">
+                    <div class="column m-5">
+                        <h2>プロフィール</h2>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="https://doodleipsum.com/300x300?i=2b7339a9ec0018c965e58a5061a47d93" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>推しメンのプロフィールを書きます</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="column m-5">
+                        <h2>ブログ</h2>
+                        <div class="box">
+                            <div class="content">
+                                <p>x月x日　xxxxxについて</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="content">
+                                <p>x月x日 xxxxxについて</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <h2 class="has-text-centered">メディア</h2>
+                <div class="colums">
+                    <div class="column m-5">
+                        <h3>X</h3>
+                        <div class="box">
+                            ここにXの固定ポストを表示する
+                        </div>
+                        <h3>Instagram</h3>
+                        <div class="box">
+                            ここにInstagramの投稿を表示する
+                        </div>
+                    </div>
+                    <div class="column m-5">
+                        <h3>TikTok</h3>
+                        <div class="box">
+                            ここにTikTokの動画を表示する
+                        </div>
+                        <h3>YouTube</h3>
+                        <div class="box">
+                            ここにYouTubeの動画を表示する
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <footer class="footer m-4">
+                <ul>
+                    <li><a href="https://momosite.jp">元乃木坂46　大園桃子さんのファンサイト「ももさいと</a></li>
+                    <li><a href="https://equal-maika.jp">＝LOVE　佐々木舞香さんのファンサイト「イコまい」</a></li>
+                </ul>
+                <div class="content has-text-centered">
+                    <p>&copy;ファンサイト名</p>
+                </div>
+            </footer>
+        </div>
+
+        <div id="message-dialog" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <p>ファイティン！</p>
+                </div>
+            </div>
+            <button id="message-close-btn" class="modal-close is-large" aria-label="close"></button>
+        </div>
+        
+        <script src="js/message.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
+    </body>
+</html>
